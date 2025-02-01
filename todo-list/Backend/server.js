@@ -2,8 +2,10 @@
 const express=require('express')
 const app=express();
 const mongoose=require('mongoose');
+const cors=require('cors');
 
 app.use(express.json())
+app.use(cors())
 
 //connset moongodb
 mongoose.connect('mongodb://localhost:27017/mern-app')
@@ -78,7 +80,7 @@ app.delete('/todos/:id',async(req,res)=>{
     }
 })
 
-const port=3000 
+const port=8000 
 app.listen(port,()=>{
     console.log(`server is listening ${port}`); 
 })
