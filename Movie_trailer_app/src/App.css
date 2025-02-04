@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 20px;
+  background-color: #f4f7f6; /* Light, neutral background */
+  color: #333; /* Dark text for better readability */
+  font-family: 'Arial', sans-serif; /* Clean, professional font */
+}
+
+.search-box {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input,
+.search-box button {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 10px; /* Added padding for a better appearance */
+  font-size: 18px;
+  border: 1px solid #ccc; /* Soft border */
+  border-radius: 5px; /* Smooth corners for modern look */
+  background-color: #fff;
+  color: #333;
+}
+
+.search-box input:focus,
+.search-box button:hover {
+  border-color: #007bff; /* Blue border on focus/hover for interactivity */
+  outline: none; /* Remove default focus outline */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Slightly darker blue for a professional look */
+}
+
+h2 {
+  margin-bottom: 15px; /* Adjusted margin for better spacing */
+  margin-top: 0;
+  align-content: center;
+  background-color: #f4f7f6;
+
+}
